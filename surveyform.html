@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="surveyform.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please enter the required information in this survey form</p>
+
+    <form id="survey-form" action="https://forminformation.com" method="post">
+      
+      <fieldset>
+        <label id="name-label">Please enter your name: <input type="text" id="name" name="name" placeholder="naam lekho" required></label>
+        <label id="email-label">Please enter your email: <input type="email" id="email" name="email" placeholder="email dalo" required></label>
+        <label id="number-label">Please enter your age: <input type="number" id="number" name="age" min="13" max="120" placeholder="age bhi dalo" required></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Where did you hear about us?
+        <select id="dropdown" ref="referrer">
+          <option value="">(select any)</option>
+          <option value="1">Facebook</option>
+          <option value="2">Instagram</option>
+          <option value="3">LinkedIn</option>
+        </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Please specify your gender:</legend>
+        <label for="male"><input type="radio" value="Male" id="male" name="male-female" checked >Male</label>
+        <label><input type="radio" id="female" value="Female" name="male-female" >Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What hobbies do you have?</legend>
+        <label for="basketball"><input type="checkbox" id="basketball" name="bb" value="Basketball" value="sport" checked>Basketball</label>
+        <label for="football"><input type="checkbox" id="football" value="sport" name="fb" >Football</label>
+        <label for="tennis"><input type="checkbox" value="sport" id="tennis" name="Tn">Tennis</label>
+        <label for="badminton"><input type="checkbox" value="sport" id="badminton" name="BD" >Badminton</label>
+        <label for="dancing"><input type="checkbox" value="sport" id="dancing" name="dn">Dancing</label>
+        <label for="singing"><input type="checkbox" value="sport" id="singing" name="Sn">Singing</label>
+        <label for="software"><input type="checkbox" value="sport" id="software" name="Sn">Software</label>
+      </fieldset>
+
+       <fieldset>
+        Additional comments:<textarea></textarea>
+       </fieldset>
+
+      <fieldset>
+        <label><input id="submit" type="submit" value="Submit"></label>
+      </fieldset>
+    
+
+    </form>
+    </main>
+  </body>
+</html>
